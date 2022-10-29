@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	
 }
 body {
 	font-family: "Raleway", sans-serif;
@@ -12,40 +11,43 @@ html {
 	scroll-behavior: smooth;
 }
 .nav {
-	position: sticky;
-	top: 0;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 110px;
-	background-color: #fff;
-	z-index: 10;
-
+	&-desktop {
+		position: sticky;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 110px;
+		background-color: #fff;
+		z-index: 10;
+	}
+	&-mobile {
+		display: none;
+	}
 	&__section {
-		margin-right: 10vw;
-		margin-left: 10vw;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-right: 20em;
+		margin-left: 20em;
 		width: 500px;
 		height: 110px;
-
-		&--link {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 2rem;
-			height: 100%;
-			width: 14rem;
-			background-color: #fff;
-			text-decoration: none;
-			color: black;
-			transition: color, background-color, 0.3s;
-		}
-		&--link:hover {
-			color: #fff;
-			background-color: black;
-		}
+	}
+	&__section-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		height: 100%;
+		width: 14rem;
+		background-color: #fff;
+		text-decoration: none;
+		color: black;
+		transition: color, background-color, 0.3s;
+	}
+	&__section-link:hover {
+		color: #fff;
+		background-color: black;
 	}
 
 	h1 {
@@ -57,6 +59,19 @@ html {
 		width: 50px;
 		height: 50px;
 		filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
+	}
+}
+.hamburger {
+	display: none;
+	position: absolute;
+	top: 3em;
+	left: 1em;
+	transform: translateY(-50%);
+	z-index: 500;
+
+	&-inner{
+		background-color: #fff;
+		z-index: 500;
 	}
 }
 .footer {
@@ -199,198 +214,160 @@ html {
 		background-size: cover;
 	}
 }
-.adventure {
-	&__title {
-		color: #fff;
-		font-size: 5.2rem;
-		border: 1px solid #fff;
-		padding: 0.8em 4.2em;
-		font-weight: 500;
-		z-index: 1;
-	}
-	&__img {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url(../img/girl-big.jpg);
-		height: 400px;
-		width: 100%;
-		background-position: center;
-		background-size: cover;
-	}
-	&__bg {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 10, 0, 0.6);
-	}
-}
-.offers {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 850px;
+// .adventure {
+// 	&__title {
+// 		color: #fff;
+// 		font-size: 5.2rem;
+// 		border: 1px solid #fff;
+// 		padding: 0.8em 4.2em;
+// 		font-weight: 500;
+// 		z-index: 1;
+// 	}
+// 	&__img {
+// 		position: relative;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		background-image: url(../img/girl-big.jpg);
+// 		height: 400px;
+// 		width: 100%;
+// 		background-position: center;
+// 		background-size: cover;
+// 	}
+// 	&__bg {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-color: rgba(0, 10, 0, 0.6);
+// 	}
+// }
+// .offers {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-direction: column;
+// 	width: 100%;
+// 	height: 850px;
 
-	&__text {
-		text-align: center;
+// 	&__text {
+// 		text-align: center;
 
-		h2 {
-			font-size: 4.5rem;
-			text-transform: uppercase;
-			font-weight: 400;
-		}
-		p {
-			padding: 1.6em;
-			font-size: 2.4rem;
-			font-weight: 500;
-		}
-	}
-	&__boxes {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-	&__offer-box {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		width: 330px;
-		height: 450px;
-		margin: 2.5em 2em;
-		padding-top: 3em;
-		border-radius: 8px;
-		box-shadow: 0px 2px 5px #818181;
+// 		h2 {
+// 			font-size: 4.5rem;
+// 			text-transform: uppercase;
+// 			font-weight: 400;
+// 		}
+// 		p {
+// 			padding: 1.6em;
+// 			font-size: 2.4rem;
+// 			font-weight: 500;
+// 		}
+// 	}
+// 	&__boxes {
+// 		display: flex;
+// 		justify-content: center;
+// 		flex-wrap: wrap;
+// 	}
+// 	&__offer-box {
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: flex-start;
+// 		align-items: center;
+// 		width: 330px;
+// 		height: 450px;
+// 		margin: 2.5em 2em;
+// 		padding-top: 3em;
+// 		border-radius: 8px;
+// 		box-shadow: 0px 2px 5px #818181;
 
-		h3 {
-			font-size: 3rem;
-			font-weight: 500;
-		}
-		p {
-			font-size: 5rem;
-			font-weight: 600;
-			padding: 0.4em;
-		}
-		ul {
-			font-weight: 500;
-			padding: 0 2em;
-			text-align: left;
-			line-height: 1.9em;
-			list-style: none;
-			font-size: 1.8rem;
-			img {
-				position: relative;
-				top: 0.2em;
-				right: 0.5em;
-			}
-			span {
-				color: #918c8c;
-			}
-		}
-	}
-	&__btn {
-		color: #818181;
-		background-color: #fff;
-		border: none;
-		border-radius: 5px;
-		box-shadow: 0px 2px 5px #818181;
-		margin-top: 1.5em;
-		width: 10em;
-		height: 2em;
-		font-family: "Raleway", sans-serif;
-		font-size: 2rem;
-		font-weight: 500;
-		cursor: pointer;
-		transition: transform 0.3s;
+// 		h3 {
+// 			font-size: 3rem;
+// 			font-weight: 500;
+// 		}
+// 		p {
+// 			font-size: 5rem;
+// 			font-weight: 600;
+// 			padding: 0.4em;
+// 		}
+// 		ul {
+// 			font-weight: 500;
+// 			padding: 0 2em;
+// 			text-align: left;
+// 			line-height: 1.9em;
+// 			list-style: none;
+// 			font-size: 1.8rem;
+// 			img {
+// 				position: relative;
+// 				top: 0.2em;
+// 				right: 0.5em;
+// 			}
+// 			span {
+// 				color: #918c8c;
+// 			}
+// 		}
+// 	}
+// 	&__btn {
+// 		color: #818181;
+// 		background-color: #fff;
+// 		border: none;
+// 		border-radius: 5px;
+// 		box-shadow: 0px 2px 5px #818181;
+// 		margin-top: 1.5em;
+// 		width: 10em;
+// 		height: 2em;
+// 		font-family: "Raleway", sans-serif;
+// 		font-size: 2rem;
+// 		font-weight: 500;
+// 		cursor: pointer;
+// 		transition: transform 0.3s;
 
-		&--color {
-			color: black;
-			background-color: #2ade71;
-			box-shadow: 0px 2px 5px #2ade71;
-		}
-	}
-	&__btn:hover {
-		transform: scale(1.1);
-	}
-	&__fullTxt-btn {
-		font-family: "Raleway", sans-serif;
-		margin-top: 1.5em;
-		width: 300px;
-		height: 50px;
-		color: black;
-		box-shadow: 0px 2px 5px #818181;
-		background-color: #fff;
-		border-radius: 8px;
-		border: none;
-		font-size: 2rem;
-		transition: transform, background-color, box-shadow, 0.5s;
-		cursor: pointer;
+// 		&--color {
+// 			color: black;
+// 			background-color: #2ade71;
+// 			box-shadow: 0px 2px 5px #2ade71;
+// 		}
+// 	}
+// 	&__btn:hover {
+// 		transform: scale(1.1);
+// 	}
+// 	&__fullTxt-btn {
+// 		font-family: "Raleway", sans-serif;
+// 		margin-top: 1.5em;
+// 		width: 300px;
+// 		height: 50px;
+// 		color: black;
+// 		box-shadow: 0px 2px 5px #818181;
+// 		background-color: #fff;
+// 		border-radius: 8px;
+// 		border: none;
+// 		font-size: 2rem;
+// 		transition: transform, background-color, box-shadow, 0.5s;
+// 		cursor: pointer;
 
-		img {
-			width: 2em;
-			height: 1em;
-		}
-	}
-	&__fullTxt-btn:hover {
-		box-shadow: 0 0 35px #2ade71;
-		background-color: #2ade71;
-		transform: scale(1.1);
-	}
-}
+// 		img {
+// 			width: 2em;
+// 			height: 1em;
+// 		}
+// 	}
+// 	&__fullTxt-btn:hover {
+// 		box-shadow: 0 0 35px #2ade71;
+// 		background-color: #2ade71;
+// 		transform: scale(1.1);
+// 	}
+// }
 
-@media (min-width: 1200px){
+// @media (min-width: 1200px){
 
-}
-@media (min-width: 992px) {
+// }
+// @media (min-width: 992px) {
 
-}
-@media (min-width: 768px) {
+// }
+// @media (min-width: 768px) {
 
-}
-@media (min-width: 576px){
+// }
+// @media (min-width: 576px){
 
-}
-@media (max-width: 576px){
-	header{
-		// width: 100%;
-		.hero {
-			&__img {
-				// position: relative;
-				background-image: url(../img/jungle-small.jpg);
-				height: 300px;
-				width: 100%;
-				// background-position: center;
-				// background-size: cover;
-				// z-index: 1;
-			}
-			&__bg {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, 0.7);
-				z-index: 1;
-			}
-			&__text {
-			position: absolute;
-			top: 45%;
-			left: 15%;
-			color: #fff;
-			font-size: 2.5rem;
-			z-index: 5;
-			transform: translateY(-50%);
-		}
-		&__title {
-			position: absolute;
-			top: 53%;
-			left: 15%;
-			z-index: 6;
-			color: #fff;
-			font-size: 4.3rem;
-			transform: translateY(-50%);
-		}
-	}
-}
-}
+// }
+@import "./small.scss";
+// @import "./medium.scss";
+// @import "./large.scss";

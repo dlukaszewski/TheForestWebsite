@@ -1,0 +1,54 @@
+@media (max-width: 576px) {
+	.nav {
+		&-desktop {
+			display: none;
+		}
+		&-mobile {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: #fff;
+			transform: translateX(-102%);
+			transition: transform 0.3s;
+			z-index: 10;
+
+			&--active {
+				transform: translateX(0);
+			}
+			h1 {
+				font-size: 1.5em;
+				font-weight: 400;
+				color: #414141;
+			}
+			&__logo {
+				width: 20px;
+				height: 20px;
+				filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
+			}
+		}
+	}
+	.hamburger{
+		display: block;
+	}
+	.hero {
+		&__img {
+			background-image: url(../img/jungle-small.jpg);
+			height: 300px;
+		}
+		&__text {
+			font-size: 1rem;
+			
+		}
+		&__title {
+			top: 52%;
+			font-size: 1.2rem;
+		}
+	}
+}
