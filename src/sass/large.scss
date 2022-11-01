@@ -1,0 +1,64 @@
+@media (min-width: 1200px) {
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+	.nav {
+		&-desktop {
+			display: flex;
+		}
+		&-mobile {
+			display: none;
+		}
+	}
+	.hero {
+		&__img {
+			background-image: url(../img/jungle-big.jpg);
+			height: 500px;
+		}
+
+		&__text {
+			font-size: 2.5rem;
+		}
+		&__title {
+			top: 53%;
+			font-size: 4.3rem;
+		}
+	}
+	.aboutUs {
+		&__box {
+			padding-bottom: 1em;
+		}
+		&__title {
+			font-size: 4.5rem;
+		}
+		&__box-text {
+			font-size: 2rem;
+			width: 700px;
+			line-height: 2em;
+			padding-left: 1em;
+			h3 {
+				padding-bottom: 1em;
+				font-size: 3rem;
+			}
+		}
+		&__box-img {
+			margin: 0 8em 8em;
+			background-image: url(../img/waters-big.jpg);
+			width: 600px;
+			height: 400px;
+		}
+	}
+    .adventure {
+        &__title {
+            font-size: 5.2rem;
+            padding: 0.8em 4.2em;
+        }
+        &__img {
+            background-image: url(../img/girl-big.jpg);
+            height: 400px;
+            width: 100%;
+        }
+    }
+}

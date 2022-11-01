@@ -1,17 +1,19 @@
 .hamburger {
+	position: fixed;
+	// top: 0;
 	padding: 5px 5px;
 	cursor: pointer;
 	font: inherit;
 	background-color: transparent;
 	border: 0;
 	margin: 0;
+	
 }
 .hamburger-box {
 	width: 30px;
 	height: 30px;
 	display: block;
 	position: relative;
-    border: 1px solid #fff;
     border-radius: 4px;
     transition: border 0.3s;
 }
@@ -23,6 +25,4 @@
     transform: translateX(-50%);
     border-radius: 4px;    
 }
-.hamburger-box:hover {
-    border: 1px solid #109c28;
-}
+

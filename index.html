@@ -27,10 +27,10 @@
                 rel="stylesheet">
         </section>
         <section class="nav__section">
-            <a class="nav__section-link" href="#home">Home</a>
-            <a class="nav__section-link" href="#aboutUs">O nas</a>
-            <a class="nav__section-link" href="#offer">Oferta</a>
-            <a class="nav__section-link" href="#contact">Kontakt</a>
+            <a class="nav__link" href="#home">Home</a>
+            <a class="nav__link" href="#aboutUs">O nas</a>
+            <a class="nav__link" href="#offer">Oferta</a>
+            <a class="nav__link" href="#contact">Kontakt</a>
         </section>
     </nav>
     <nav class="nav nav-mobile">
@@ -43,24 +43,24 @@
                 rel="stylesheet">
         </section>
         <section class="nav__section">
-            <a class="nav__section-link" href="#home">Home</a>
-            <a class="nav__section-link" href="#aboutUs">O nas</a>
-            <a class="nav__section-link" href="#offer">Oferta</a>
-            <a class="nav__section-link" href="#contact">Kontakt</a>
+            <a class="nav__link-mobile" href="#home">Home</a>
+            <a class="nav__link-mobile" href="#aboutUs">O nas</a>
+            <a class="nav__link-mobile" href="#offer">Oferta</a>
+            <a class="nav__link-mobile" href="#contact">Kontakt</a>
         </section>
     </nav>
 </header>
-    <header>
-        <div class="hero__img">
+    <section>
+        <div id="home" class="hero__img">
             <div class="hero__bg"></div>
             <div>
                 <p class="hero__text">Forest Group</p>
                 <h1 class="hero__title">Najpiękniejszy park w Twojej okolicy!</h1>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section class="aboutUs">
+    <section id="aboutUs" class="aboutUs">
         <h2 class="aboutUs__title">O nas</h2>
         <div class="aboutUs__box">
             <div class="aboutUs__box-img"></div>
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <section class="offers">
+    <section id="offer" class="offers">
         <div class="offers__text">
             <h2 class="offers__title">Oferta</h2>
             <p class="offers__subTitle">Wybierz jedną z naszych wspaniałych ofert!</p>
@@ -139,7 +139,7 @@
     <footer class="footer footer-desktop">
     <section class="footer__section-main">
         <section class="footer__section-title">
-            <!-- <img class="footer__logo" src="dist/img/tree_nature_icon.png" alt="Pine logo"> -->
+            <img class="footer__logo" src="dist/img/tree_nature_icon.png" alt="Pine logo">
             <h2>Forest</h2>
         </section>
         <section class="footer__section-links">
@@ -171,6 +171,7 @@
     <hr>
     <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd. </p>
 </footer>
+    <script src="../dist/js/script.min.js"></script>
 </body>
 
 </html>
