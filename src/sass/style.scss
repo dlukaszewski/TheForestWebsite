@@ -45,7 +45,6 @@ html {
 		margin-right: 20em;
 		margin-left: 20em;
 		width: 500px;
-		// height: 110px;
 	}
 	&__link {
 		display: flex;
@@ -128,8 +127,6 @@ html {
 
 	&__section-links {
 		display: flex;
-		// justify-content: space-around;
-		// align-items: flex-start;
 		font-size: 1.8rem;
 		flex-wrap: wrap;
 	}
@@ -190,17 +187,13 @@ html {
 	&__text {
 		position: absolute;
 		top: 45%;
-		left: 25%;
 		color: #fff;
 		z-index: 5;
-		transform: translateY(-50%);
 	}
 	&__title {
 		position: absolute;
-		left: 25%;
 		z-index: 6;
 		color: #fff;
-		transform: translateY(-50%);
 	}
 }
 .aboutUs {
@@ -231,9 +224,7 @@ html {
 .adventure {
 	&__title {
 		color: #fff;
-		// font-size: 5.2rem;
 		border: 1px solid #fff;
-		// padding: 0.8em 4.2em;
 		font-weight: 500;
 		z-index: 1;
 	}
@@ -242,9 +233,6 @@ html {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// background-image: url(../img/girl-big.jpg);
-		// height: 400px;
-		// width: 100%;
 		background-position: center;
 		background-size: cover;
 	}
@@ -255,133 +243,94 @@ html {
 		background-color: rgba(0, 10, 0, 0.6);
 	}
 }
-// .offers {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	flex-direction: column;
-// 	width: 100%;
-// 	height: 850px;
+.offers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 10em;
 
-// 	&__text {
-// 		text-align: center;
+	&__text {
+		text-align: center;
 
-// 		h2 {
-// 			font-size: 4.5rem;
-// 			text-transform: uppercase;
-// 			font-weight: 400;
-// 		}
-// 		p {
-// 			padding: 1.6em;
-// 			font-size: 2.4rem;
-// 			font-weight: 500;
-// 		}
-// 	}
-// 	&__boxes {
-// 		display: flex;
-// 		justify-content: center;
-// 		flex-wrap: wrap;
-// 	}
-// 	&__offer-box {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: flex-start;
-// 		align-items: center;
-// 		width: 330px;
-// 		height: 450px;
-// 		margin: 2.5em 2em;
-// 		padding-top: 3em;
-// 		border-radius: 8px;
-// 		box-shadow: 0px 2px 5px #818181;
+		h2 {
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		p {
+			font-weight: 500;
+		}
+	}
+	&__boxes {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__offer-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 
-// 		h3 {
-// 			font-size: 3rem;
-// 			font-weight: 500;
-// 		}
-// 		p {
-// 			font-size: 5rem;
-// 			font-weight: 600;
-// 			padding: 0.4em;
-// 		}
-// 		ul {
-// 			font-weight: 500;
-// 			padding: 0 2em;
-// 			text-align: left;
-// 			line-height: 1.9em;
-// 			list-style: none;
-// 			font-size: 1.8rem;
-// 			img {
-// 				position: relative;
-// 				top: 0.2em;
-// 				right: 0.5em;
-// 			}
-// 			span {
-// 				color: #918c8c;
-// 			}
-// 		}
-// 	}
-// 	&__btn {
-// 		color: #818181;
-// 		background-color: #fff;
-// 		border: none;
-// 		border-radius: 5px;
-// 		box-shadow: 0px 2px 5px #818181;
-// 		margin-top: 1.5em;
-// 		width: 10em;
-// 		height: 2em;
-// 		font-family: "Raleway", sans-serif;
-// 		font-size: 2rem;
-// 		font-weight: 500;
-// 		cursor: pointer;
-// 		transition: transform 0.3s;
+		box-shadow: 0px 2px 5px #818181;
 
-// 		&--color {
-// 			color: black;
-// 			background-color: #2ade71;
-// 			box-shadow: 0px 2px 5px #2ade71;
-// 		}
-// 	}
-// 	&__btn:hover {
-// 		transform: scale(1.1);
-// 	}
-// 	&__fullTxt-btn {
-// 		font-family: "Raleway", sans-serif;
-// 		margin-top: 1.5em;
-// 		width: 300px;
-// 		height: 50px;
-// 		color: black;
-// 		box-shadow: 0px 2px 5px #818181;
-// 		background-color: #fff;
-// 		border-radius: 8px;
-// 		border: none;
-// 		font-size: 2rem;
-// 		transition: transform, background-color, box-shadow, 0.5s;
-// 		cursor: pointer;
+		h3 {
+			font-weight: 500;
+		}
+		p {
+			font-weight: 600;
+		}
+		ul {
+			font-weight: 500;
+			text-align: left;
+			list-style: none;
+		
+			span {
+				color: #918c8c;
+			}
+		}
+	}
+	&__btn {
+		color: #818181;
+		background-color: #fff;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 2px 5px #818181;
+		font-family: "Raleway", sans-serif;
+		font-weight: 500;
+		cursor: pointer;
+		transition: transform 0.3s;
 
-// 		img {
-// 			width: 2em;
-// 			height: 1em;
-// 		}
-// 	}
-// 	&__fullTxt-btn:hover {
-// 		box-shadow: 0 0 35px #2ade71;
-// 		background-color: #2ade71;
-// 		transform: scale(1.1);
-// 	}
-// }
+		&--color {
+			color: black;
+			background-color: #2ade71;
+			box-shadow: 0px 2px 5px #2ade71;
+		}
+	}
+	&__btn:hover {
+		transform: scale(1.1);
+	}
+	&__fullTxt-btn {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		font-family: "Raleway", sans-serif;
+		color: black;
+		box-shadow: 0px 2px 5px #818181;
+		background-color: #fff;
+		border-radius: 8px;
+		border: none;
+		transition: transform, background-color, box-shadow, 0.5s;
+		cursor: pointer;
 
-// @media (min-width: 1200px){
-
-// }
-// @media (min-width: 992px) {
-
-// }
-// @media (min-width: 768px) {
-
-// }
-// @media (min-width: 576px){
-
-// }
+	}
+	&__fullTxt-btn:hover {
+		box-shadow: 0 0 35px #2ade71;
+		background-color: #2ade71;
+		transform: scale(1.1);
+	}
+}
 @import "./small.scss";
 // @import "./medium.scss";
 @import "./large.scss";

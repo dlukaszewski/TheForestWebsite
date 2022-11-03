@@ -19,11 +19,15 @@
 		}
 
 		&__text {
+			left: 25%;
 			font-size: 2.5rem;
+			transform: translateY(-50%);
 		}
 		&__title {
+			left: 25%;
 			top: 53%;
 			font-size: 4.3rem;
+			transform: translateY(-50%);
 		}
 	}
 	.aboutUs {
@@ -50,15 +54,92 @@
 			height: 400px;
 		}
 	}
-    .adventure {
-        &__title {
-            font-size: 5.2rem;
-            padding: 0.8em 4.2em;
-        }
-        &__img {
-            background-image: url(../img/girl-big.jpg);
-            height: 400px;
-            width: 100%;
-        }
-    }
+	.adventure {
+		&__title {
+			font-size: 5.2rem;
+			padding: 0.8em 4.2em;
+		}
+		&__img {
+			background-image: url(../img/girl-big.jpg);
+			height: 400px;
+			width: 100%;
+		}
+	}
+	.offers {
+		height: 850px;
+		&__text {
+			h2 {
+				font-size: 4.5rem;
+			}
+			p {
+				padding: 1.6em;
+				font-size: 2.4rem;
+			}
+		}
+		&__offer-box {
+			width: 330px;
+			height: 450px;
+			margin: 2.5em 2em;
+			padding-top: 3em;
+			border-radius: 8px;
+
+			h3 {
+				font-size: 4rem;
+			}
+			p {
+				font-size: 5rem;
+				padding: 0.4em;
+			}
+			ul {
+				padding: 0 2em;
+				line-height: 1.9em;
+				font-size: 1.8rem;
+			}
+			img {
+				position: relative;
+				top: 0.2em;
+				right: 0.5em;
+			}
+		}
+		&__btn {
+			margin-top: 1.5em;
+			width: 10em;
+			height: 2em;
+			font-size: 2rem;
+		}
+		&__fullTxt-btn {
+			margin-top: 1.5em;
+			width: 300px;
+			height: 50px;
+			font-size: 2rem;
+		}
+		.arrow {
+			width: 1em;
+			height: 1em;
+		}
+	}
+	.footer {
+		height: 40em;
+		&__section-links {
+			font-size: 1.8rem;
+		}
+		&__box {
+			padding: 3em;
+			line-height: 2em;
+		}
+		&__box-title {
+			font-size: 2.5rem;
+		}
+		h2 {
+			font-size: 5rem;
+		}
+		&__logo {
+			width: 8em;
+			height: 8em;
+			filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
+		}
+		&__bottom-text {
+			font-size: 1.3rem;
+		}
+	}
 }

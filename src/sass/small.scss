@@ -25,52 +25,141 @@
 			}
 		}
 	}
-}
-.hero {
-	&__img {
-		background-image: url(../img/jungle-small.jpg);
-		height: 300px;
-	}
-	&__text {
-		font-size: 1rem;
-	}
-	&__title {
-		top: 51%;
-		font-size: 1.2rem;
-	}
-}
-.aboutUs {
-	&__box {
-		padding-bottom: 5em;
-	}
-	&__title {
-		font-size: 2.5rem;
-	}
-	&__box-text {
-		font-size: 1rem;
-		width: 280px;
-		line-height: 2em;
 
-		h3 {
-			padding-bottom: 1em;
-			font-size: 1.4rem;
+	.hero {
+		&__img {
+			background-image: url(../img/jungle-small.jpg);
+			height: 300px;
+		}
+		&__text {
+			width: 100%;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		&__title {
+			width: 100%;
+			top: 53%;
+			font-size: 2rem;
+			text-align: center;
 		}
 	}
-	&__box-img {
-		margin: 0 2em 2em;
-		background-image: url(../img/waters-small.jpg);
-		width: 300px;
-		height: 200px;
+	.aboutUs {
+		&__box {
+			padding-bottom: 5em;
+		}
+		&__title {
+			font-size: 2.5rem;
+		}
+		&__box-text {
+			font-size: 1rem;
+			width: 280px;
+			line-height: 2em;
+
+			h3 {
+				padding-bottom: 1em;
+				font-size: 1.4rem;
+			}
+		}
+		&__box-img {
+			margin: 0 2em 2em;
+			background-image: url(../img/waters-small.jpg);
+			width: 300px;
+			height: 200px;
+		}
 	}
-}
-.adventure {
-	&__title {
-		font-size: 1.9rem;
-		padding: 0.8em 1.2em;
+	.adventure {
+		&__title {
+			font-size: 1.9rem;
+			padding: 0.8em 1.2em;
+		}
+		&__img {
+			background-image: url(../img/girl-small.jpg);
+			height: 250px;
+			width: 100%;
+		}
 	}
-	&__img {
-		background-image: url(../img/girl-small.jpg);
-		height: 250px;
-		width: 100%;
+	.offers {
+		height: 145em;
+		&__text {
+			h2 {
+				font-size: 2.5rem;
+			}
+			p {
+				padding: 1.6em;
+				font-size: 1.4rem;
+			}
+		}
+		&__offer-box {
+			width: 230px;
+			height: 350px;
+			margin: 1.5em 1em;
+			padding-top: 2em;
+			border-radius: 8px;
+
+			h3 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 3rem;
+				padding: 0.4em;
+			}
+			ul {
+				padding: 0 2em;
+				line-height: 1.9em;
+				font-size: 1.2rem;
+			}
+			img {
+				position: relative;
+				top: 0.2em;
+				right: 0.5em;
+			}
+		}
+		&__btn {
+			margin-top: 1.5em;
+			width: 7em;
+			height: 2em;
+			font-size: 1.5rem;
+		}
+		&__fullTxt-btn {
+			margin-top: 1.5em;
+			width: 230px;
+			height: 50px;
+			font-size: 1.5rem;
+		}
+		.arrow {
+			width: 1em;
+			height: 1em;
+		}
+	}
+	.footer {
+		height: 25em;
+	
+
+		&__section-title {
+			padding-top: 2em;
+		}
+
+		&__section-links {
+			font-size: 1.1rem;
+		}
+		&__box {
+			width: 100px;
+			padding: 3em 0.9em 0.9em;
+			line-height: 2.5em;
+		}
+		&__box-title {
+			font-size: 1.3rem;
+		}
+		h2 {
+			font-size: 2.5rem;
+		}
+		&__logo {
+			width: 2em;
+			height: 2em;
+			filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
+		}
+		&__bottom-text {
+			font-size: 1rem;
+		}
 	}
 }
