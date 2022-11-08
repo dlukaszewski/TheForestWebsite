@@ -17,18 +17,15 @@
 			background-image: url(../img/jungle-big.jpg);
 			height: 500px;
 		}
-
-		&__text {
-			left: 30.2%;
-			text-align: left;
-			font-size: 2.5rem;
-			transform: translateY(-50%);
-		}
 		&__title {
+			span{
+				font-weight: 300;
+				font-size: 2.5rem;
+			}
 			left: 50%;
-			top: 53%;
+			top: 50%;
 			font-size: 4.3rem;
-			transform: translate(-50% , -50%);
+			transform: translate(-50%,-50%);
 		}
 	}
 	.aboutUs {

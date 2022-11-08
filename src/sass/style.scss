@@ -161,10 +161,12 @@ html {
 		filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
 	}
 	&__bottom-text {
+		margin-top: 2em;
 		font-size: 1.3rem;
 		color: #414141;
 	}
 	hr {
+		margin-top: 5em;
 		width: 100%;
 		color: black;
 	}

@@ -4,6 +4,7 @@ const navMobile = document.querySelector(".nav-mobile");
 const navLinkMobile = document.querySelectorAll(".nav__link-mobile");
 const hamburgerBox = document.querySelector(".hamburger-box");
 const allSections = document.querySelectorAll([".black-section", ".white-section"]);
+const footerYear = document.querySelector(".footer__year");
 
 const handleNav = () => {
 	hamburgerBtn.classList.toggle("is-active");
@@ -43,6 +44,10 @@ const handleScroll = () => {
 		}
 	});
 };
+const handleFooterYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+}
 // const handleScroll = () => {
 // 	const currentSection = window.scrollY;
 
@@ -63,3 +68,4 @@ const handleScroll = () => {
 // handleScroll();
 hamburgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleScroll);
+handleFooterYear();
