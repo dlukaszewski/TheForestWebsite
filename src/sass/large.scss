@@ -19,15 +19,16 @@
 		}
 
 		&__text {
-			left: 25%;
+			left: 30.2%;
+			text-align: left;
 			font-size: 2.5rem;
 			transform: translateY(-50%);
 		}
 		&__title {
-			left: 25%;
+			left: 50%;
 			top: 53%;
 			font-size: 4.3rem;
-			transform: translateY(-50%);
+			transform: translate(-50% , -50%);
 		}
 	}
 	.aboutUs {
