@@ -7,9 +7,17 @@
 	.nav {
 		&-desktop {
 			display: flex;
+			height: 11em;
 		}
 		&-mobile {
 			display: none;
+		}
+		h1 {
+			font-size: 4.5rem;
+		}
+		&__logo {
+			width: 50px;
+			height: 50px;
 		}
 	}
 	.hero {
@@ -18,14 +26,14 @@
 			height: 500px;
 		}
 		&__title {
-			span{
+			span {
 				font-weight: 300;
 				font-size: 2.5rem;
 			}
 			left: 50%;
 			top: 50%;
 			font-size: 4.3rem;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 		}
 	}
 	.aboutUs {
@@ -33,6 +41,7 @@
 			padding-bottom: 3em;
 		}
 		&__title {
+			padding: 1.6em;
 			font-size: 4.5rem;
 		}
 		&__box-text {
@@ -64,7 +73,7 @@
 		}
 	}
 	.offers {
-		height: 850px;
+		height: 130em;
 		&__text {
 			h2 {
 				font-size: 4.5rem;
@@ -137,6 +146,7 @@
 			filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
 		}
 		&__bottom-text {
+			margin-top: 2em;
 			font-size: 1.3rem;
 		}
 	}

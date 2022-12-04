@@ -13,8 +13,6 @@ html {
 .nav {
 	&-desktop {
 		justify-content: space-around;
-		// width: 100%;
-		height: 11em;
 		background-color: #fff;
 	}
 	&-mobile {
@@ -65,7 +63,6 @@ html {
 		justify-content: center;
 		font-size: 2rem;
 		height: 100%;
-		width: 14rem;
 		background-color: #fff;
 		text-decoration: none;
 		color: black;
@@ -76,13 +73,10 @@ html {
 		background-color: black;
 	}
 	h1 {
-		font-size: 4.5rem;
 		font-weight: 400;
 		color: #414141;
 	}
 	&__logo {
-		width: 50px;
-		height: 50px;
 		filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
 	}
 }
@@ -104,7 +98,6 @@ html {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 40vh;
 	width: 100%;
 	background-color: #f5f5f5;
 	flex-direction: column;
@@ -124,15 +117,7 @@ html {
 
 	&__section-links {
 		display: flex;
-		font-size: 1.8rem;
 		flex-wrap: wrap;
-	}
-	&__box {
-		padding: 3em;
-		line-height: 2em;
-	}
-	&__box-title {
-		font-size: 2.5rem;
 	}
 	&__box-list {
 		list-style: none;
@@ -147,18 +132,13 @@ html {
 		}
 	}
 	h2 {
-		font-size: 5rem;
 		font-weight: 400;
 		color: #414141;
 	}
 	&__logo {
-		width: 8em;
-		height: 8em;
 		filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%); //Zmiana koloru loga z czarnego na lekki szary
 	}
 	&__bottom-text {
-		margin-top: 2em;
-		font-size: 1.3rem;
 		color: #414141;
 	}
 	hr {
@@ -205,7 +185,6 @@ html {
 		flex-wrap: wrap;
 	}
 	&__title {
-		padding: 1.6em;
 		text-align: center;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -214,7 +193,6 @@ html {
 		text-align: justify;
 	}
 	&__box-img {
-		height: 400px;
 		background-position: center;
 		background-size: cover;
 	}
@@ -247,7 +225,6 @@ html {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 10em;
 
 	&__text {
 		text-align: center;
