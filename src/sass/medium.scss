@@ -1,4 +1,7 @@
 @media (min-width: 769px) and (max-width: 991px) {
+	html {
+		scroll-padding-top: 9em;
+	}
 	header {
 		position: sticky;
 		top: 0;
