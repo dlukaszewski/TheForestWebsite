@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 	header {
 		position: sticky;
 		top: 0;
@@ -30,7 +30,7 @@
 	}
 	.aboutUs {
 		&__box {
-			padding-bottom: 1em;
+			padding-bottom: 3em;
 		}
 		&__title {
 			font-size: 4.5rem;

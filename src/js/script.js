@@ -11,8 +11,8 @@ const handleNav = () => {
 	navMobile.classList.toggle("nav-mobile--active");
 	hamburgerBox.classList.toggle("hamburger-box--active");
 	hamburgerLogo.setAttribute("src", "dist/img/tree_nature_icon.png");
-	deleteAnimation();
 	turnWhiteLogo();
+	deleteAnimation();
 };
 
 const deleteAnimation = () => {

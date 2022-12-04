@@ -1,0 +1,163 @@
+@media (min-width: 769px) and (max-width: 991px) {
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+	.nav {
+		&-desktop {
+			display: flex;
+			height: 9em;
+		}
+		&-mobile {
+			display: none;
+		}
+		&__link {
+			font-size: 1.8rem;
+			width: 5em;
+		}
+		h1{
+			font-size: 3.8rem;
+		}
+		&__logo{
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.hero {
+		&__img {
+			background-image: url(../img/jungle-big.jpg);
+			height: 40em;
+			
+		}
+		&__title {
+			span {
+				font-weight: 300;
+				font-size: 2.5rem;
+			}
+			margin-right: -5em;
+			left: 50%;
+			top: 50%;
+			font-size: 3rem;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.aboutUs {
+		&__box {
+			padding-bottom: 5em;
+		}
+		&__title {
+			padding: 1.1em;
+			font-size: 4rem;
+		}
+		&__box-text {
+			font-size: 1.5rem;
+			width: 550px;
+			line-height: 2em;
+			// padding-left: 1em;
+			h3 {
+				padding-bottom: 1em;
+				font-size: 2.2rem;
+			}
+		}
+		&__box-img {
+			margin: 0 8em 8em;
+			background-image: url(../img/waters-big.jpg);
+			width: 550px;
+			height: 350px;
+		}
+	}
+	.adventure {
+		&__title {
+			font-size: 3.5rem;
+			padding: 0.8em 1.2em;
+		}
+		&__img {
+			background-image: url(../img/girl-big.jpg);
+			height: 300px;
+			width: 100%;
+		}
+	}
+	.offers {
+		height: 110em;
+		&__text {
+			h2 {
+				font-size: 4rem;
+			}
+			p {
+				padding: 1em;
+				font-size: 2.2rem;
+			}
+		}
+		&__offer-box {
+			width: 230px;
+			height: 350px;
+			margin: 2.5em 2em;
+			padding-top: 3em;
+			border-radius: 8px;
+
+			h3 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 3rem;
+				padding: 0.4em;
+			}
+			ul {
+				padding: 0 2em;
+				line-height: 1.9em;
+				font-size: 1.2rem;
+			}
+			img {
+				position: relative;
+				top: 0.2em;
+				right: 0.5em;
+			}
+		}
+		&__btn {
+			margin-top: 1.5em;
+			width: 7em;
+			height: 2em;
+			font-size: 1.5rem;
+		}
+		&__fullTxt-btn {
+			margin-top: 1.5em;
+			width: 230px;
+			height: 50px;
+			font-size: 1.5rem;
+		}
+		.arrow {
+			width: 1em;
+			height: 1em;
+		}
+	}
+	.footer {
+		height: 30em;
+		&__section-title {
+			padding-top: 2.5em;
+		}
+		&__section-links {
+			font-size: 1.4rem;
+		}
+		&__box {
+			width: 150px;
+			padding: 3em 0.9em 0.9em;
+			line-height: 2.5em;
+		}
+		&__box-title {
+			font-size: 1.8rem;
+		}
+		h2 {
+			font-size: 3.8rem;
+		}
+		&__logo {
+			width: 33px;
+			height: 33px;
+			
+		}
+		&__bottom-text {
+			margin-top: 1.2em;
+			font-size: 1.3rem;
+		}
+	}
+}
