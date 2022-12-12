@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontakt</title>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <!-- @include 'styles.kit' -->
 </head>
+
 <body>
     <!-- @include 'nav.kit' -->
+    <!-- @include 'hamburger-black.kit' -->
+    <section class="contact">
+        <div class="contact__box">
+            <div class="contact__data">
+                <h3>Kontakt</h3>
+                <p>The Forest</p>
+                <ul>
+                    <li>Kaldera YellowStone</li>
+                    <li>Wyoming 82190, Stany Zjednoczone</li>
+                    <li><a href="mailto:office@theforest.com">office@theforest.com</a></li>
+                    <li>Tel: +1 123 456 7890</li>
+                    <li>Godziny otwarcia: pon - pt 8:00 - 18:00</li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
 
 
     <!-- @include 'footer.kit' -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvcD1lf3s3NHGpSHMpgg9bKr-YyrrmMLk&callback=initMap&v=weekly"
+        defer></script>
+    <script src="../dist/js/script.min.js"></script>
 </body>
+
 </html>

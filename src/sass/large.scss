@@ -153,4 +153,31 @@
 			font-size: 1.3rem;
 		}
 	}
+	.contact {
+		&__box {
+			padding: 5em;
+			height: 60em;
+			
+		}
+		&__data {
+			line-height: 3em;
+			padding-left: 5em;
+			h3 {
+				font-size: 3.5rem;
+			}
+			p {
+				padding-bottom: 0.6em;
+				font-size: 1.9rem;
+			}
+			ul {
+				font-size: 1.6rem;
+			}
+		}
+		#map {
+			height: 50em;
+			width: 70em;
+			flex-grow: 1;
+			// width: 100%;
+		}
+	}
 }

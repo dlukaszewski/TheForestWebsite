@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontakt</title>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <link rel="stylesheet" href="/dist/css/style.min.css">
 <link rel="stylesheet" href="./dist/css/hamburger.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Raleway:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
     <header>
     <button class="hamburger" type="button">
-        <span class="hamburger-box">
-            <img class="hamburger-logo" src="dist/img/tree_nature_icon_white.png" alt="Pine logo">
-        </span>
-    </button>
+    <span class="hamburger-box">
+        <img class="hamburger-logo" src="dist/img/tree_nature_icon_white.png" alt="Pine logo">
+    </span>
+</button>
     <nav class="nav nav-desktop">
         <section class="nav__section">
             <img class="nav__logo" src="dist/img/tree_nature_icon.png" alt="Pine logo">
             <h1>Forest</h1>
         </section>
         <section class="nav__section">
-            <a class="nav__link" href="#home">Home</a>
+            <a class="nav__link" href="../index.html">Home</a>
             <a class="nav__link" href="#aboutUs">O nas</a>
             <a class="nav__link" href="#offer">Oferta</a>
-            <a class="nav__link" href="#contact">Kontakt</a>
+            <a class="nav__link" href="../contact.html">Kontakt</a>
         </section>
     </nav>
     <nav class="nav nav-mobile">
@@ -36,13 +42,34 @@
             <h1>Forest</h1>
         </section>
         <section class="nav__section">
-            <a class="nav__link-mobile" href="#home">Home</a>
+            <a class="nav__link-mobile" href="../index.html">Home</a>
             <a class="nav__link-mobile" href="#aboutUs">O nas</a>
             <a class="nav__link-mobile" href="#offer">Oferta</a>
-            <a class="nav__link-mobile" href="#contact">Kontakt</a>
+            <a class="nav__link-mobile" href="../contact.html">Kontakt</a>
         </section>
     </nav>
 </header>
+    <button class="hamburger" type="button">
+    <span class="hamburger-box">
+        <img class="hamburger-logo" src="dist/img/tree_nature_icon.png" alt="Pine logo">
+    </span>
+</button>
+    <section class="contact">
+        <div class="contact__box">
+            <div class="contact__data">
+                <h3>Kontakt</h3>
+                <p>The Forest</p>
+                <ul>
+                    <li>Kaldera YellowStone</li>
+                    <li>Wyoming 82190, Stany Zjednoczone</li>
+                    <li><a href="mailto:office@theforest.com">office@theforest.com</a></li>
+                    <li>Tel: +1 123 456 7890</li>
+                    <li>Godziny otwarcia: pon - pt 8:00 - 18:00</li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
 
 
     <footer class="footer footer-desktop">
@@ -80,5 +107,10 @@
         <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd. </p>
     </section>
 </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvcD1lf3s3NHGpSHMpgg9bKr-YyrrmMLk&callback=initMap&v=weekly"
+        defer></script>
+    <script src="../dist/js/script.min.js"></script>
 </body>
+
 </html>

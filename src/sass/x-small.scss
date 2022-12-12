@@ -180,4 +180,32 @@
 			font-size: 1rem;
 		}
 	}
+	.contact {
+		padding:  6em 2em;
+		&__box {
+			flex-direction: column;
+			align-items: baseline;
+			padding: 2em;
+			height: 70em;
+			width: 100%;
+		}
+		&__data {
+			line-height: 3em;
+			padding-bottom: 2em;
+			h3 {
+				font-size: 1.7rem;
+			}
+			p {
+				padding-bottom: 0.6em;
+				font-size: 1.2rem;
+			}
+			ul {
+				font-size: 0.9rem;
+			}
+		}
+		#map {
+			height: 36em;
+			width: 100%;
+		}
+	}
 }

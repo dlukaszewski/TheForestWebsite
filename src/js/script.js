@@ -3,8 +3,12 @@ const hamburgerLogo = document.querySelector(".hamburger-logo");
 const navMobile = document.querySelector(".nav-mobile");
 const navLinkMobile = document.querySelectorAll(".nav__link-mobile");
 const hamburgerBox = document.querySelector(".hamburger-box");
-const allSections = document.querySelectorAll([".black-section", ".white-section"]);
+const allSections = document.querySelectorAll([
+	".black-section",
+	".white-section",
+]);
 const footerYear = document.querySelector(".footer__year");
+const googleMap = document.getElementById("map");
 
 const handleNav = () => {
 	hamburgerBtn.classList.toggle("is-active");
@@ -13,6 +17,7 @@ const handleNav = () => {
 	hamburgerLogo.setAttribute("src", "dist/img/tree_nature_icon.png");
 	turnWhiteLogo();
 	deleteAnimation();
+	handleScroll();
 };
 
 const deleteAnimation = () => {
@@ -35,10 +40,16 @@ const handleScroll = () => {
 	const currentSection = window.scrollY;
 
 	allSections.forEach(section => {
-		if (section.classList.contains("white-section") && section.offsetTop <= currentSection + 30) {
+		if (
+			section.classList.contains("white-section") &&
+			section.offsetTop <= currentSection + 30
+		) {
 			hamburgerLogo.setAttribute("src", "dist/img/tree_nature_icon.png");
 			hamburgerBox.style.border = "1px solid black";
-		} else if (section.classList.contains("black-section") && section.offsetTop <= currentSection + 30){
+		} else if (
+			section.classList.contains("black-section") &&
+			section.offsetTop <= currentSection + 30
+		) {
 			hamburgerLogo.setAttribute("src", "dist/img/tree_nature_icon_white.png");
 			hamburgerBox.style.border = "1px solid #fff";
 		}
@@ -47,7 +58,19 @@ const handleScroll = () => {
 const handleFooterYear = () => {
 	const year = new Date().getFullYear();
 	footerYear.innerText = year;
-}
+};
+const initMap = () => {
+	const calderaYellowStone = { lat: 44.413, lng: -110.723 };
+
+	const map = new google.maps.Map(googleMap, {
+		zoom: 12,
+		center: calderaYellowStone,
+	});
+	const marker = new google.maps.Marker({
+		position: calderaYellowStone,
+		map: map,
+	});
+};
 // const handleScroll = () => {
 // 	const currentSection = window.scrollY;
 
@@ -66,6 +89,7 @@ const handleFooterYear = () => {
 // 	});
 // };
 // handleScroll();
+window.initMap = initMap;
 hamburgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleScroll);
 handleFooterYear();
