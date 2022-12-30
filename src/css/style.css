@@ -1,0 +1,1278 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.nav-desktop {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-transform: translateX(-102%);
+          transform: translateX(-102%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: 10;
+}
+
+.nav-mobile--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50em;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  height: 100%;
+  width: 14rem;
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color, background-color, 0.3s;
+  transition: color, background-color, 0.3s;
+}
+
+.nav__link:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.nav__link-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  height: 100%;
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color, background-color, 0.3s;
+  transition: color, background-color, 0.3s;
+}
+
+.nav__link-mobile:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.nav h1 {
+  font-weight: 400;
+  color: #414141;
+}
+
+.nav__logo {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+          filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 500;
+}
+
+.hamburger-inner {
+  background-color: #fff;
+  z-index: 500;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__section-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__section-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__box-list {
+  list-style: none;
+}
+
+.footer__box-list a {
+  text-decoration: none;
+  color: #414141;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer__box-list a:hover {
+  color: #109c28;
+}
+
+.footer h2 {
+  font-weight: 400;
+  color: #414141;
+}
+
+.footer__logo {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+          filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+}
+
+.footer__bottom-text {
+  color: #414141;
+}
+
+.footer hr {
+  margin-top: 5em;
+  width: 100%;
+  color: black;
+}
+
+.hero__img {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.hero__text {
+  position: absolute;
+  top: 45%;
+  color: #fff;
+  z-index: 5;
+}
+
+.hero__title {
+  position: absolute;
+  z-index: 6;
+  color: #fff;
+}
+
+.aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUs__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutUs__title {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.aboutUs__box-text {
+  text-align: justify;
+}
+
+.aboutUs__box-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.adventure__title {
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.adventure__img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.adventure__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 10, 0, 0.6);
+}
+
+.offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.offers__text {
+  text-align: center;
+}
+
+.offers__text h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.offers__text p {
+  font-weight: 500;
+}
+
+.offers__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offers__offer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 5px #818181;
+          box-shadow: 0px 2px 5px #818181;
+}
+
+.offers__offer-box h3 {
+  font-weight: 500;
+}
+
+.offers__offer-box p {
+  font-weight: 600;
+}
+
+.offers__offer-box ul {
+  font-weight: 500;
+  text-align: left;
+  list-style: none;
+}
+
+.offers__offer-box ul span {
+  color: #918c8c;
+}
+
+.offers__btn {
+  color: #818181;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 5px #818181;
+          box-shadow: 0px 2px 5px #818181;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.offers__btn--color {
+  color: black;
+  background-color: #2ade71;
+  -webkit-box-shadow: 0px 2px 5px #2ade71;
+          box-shadow: 0px 2px 5px #2ade71;
+}
+
+.offers__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.offers__fullTxt-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  -webkit-box-shadow: 0px 2px 5px #818181;
+          box-shadow: 0px 2px 5px #818181;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  -webkit-transition: background-color, 0.5s, -webkit-transform, -webkit-box-shadow;
+  transition: background-color, 0.5s, -webkit-transform, -webkit-box-shadow;
+  transition: transform, background-color, box-shadow, 0.5s;
+  transition: transform, background-color, box-shadow, 0.5s, -webkit-transform, -webkit-box-shadow;
+  cursor: pointer;
+}
+
+.offers__fullTxt-btn:hover {
+  -webkit-box-shadow: 0 0 35px #2ade71;
+          box-shadow: 0 0 35px #2ade71;
+  background-color: #2ade71;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eee;
+  padding: 5em;
+}
+
+.contact__box {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 5px #444;
+          box-shadow: 0px 2px 5px #444;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+}
+
+.contact__data ul {
+  font-family: 'Comfortaa' , cursive;
+  list-style: none;
+}
+
+.contact__data ul a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .nav-mobile {
+    position: fixed;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav__section {
+    width: 100%;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav h1 {
+    font-size: 4rem;
+  }
+  .nav__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger-box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+  .hamburger-box--active {
+    border: 1px solid black;
+  }
+  .hamburger-logo {
+    height: 20px;
+    width: 20px;
+  }
+  .hero__img {
+    background-image: url(../img/jungle-small.jpg);
+    height: 300px;
+  }
+  .hero__title {
+    line-height: 1.3em;
+    width: 100%;
+    top: 50%;
+    font-size: 2rem;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .hero__title span {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .aboutUs__box {
+    padding-bottom: 5em;
+  }
+  .aboutUs__title {
+    padding: 1.6em;
+    font-size: 2.5rem;
+  }
+  .aboutUs__box-text {
+    font-size: 1rem;
+    width: 280px;
+    line-height: 2em;
+  }
+  .aboutUs__box-text h3 {
+    padding-bottom: 1em;
+    font-size: 1.4rem;
+  }
+  .aboutUs__box-img {
+    margin: 0 2em 2em;
+    background-image: url(../img/waters-small.jpg);
+    width: 300px;
+    height: 200px;
+  }
+  .adventure__title {
+    font-size: 1.9rem;
+    padding: 0.8em 1.2em;
+  }
+  .adventure__img {
+    background-image: url(../img/girl-small.jpg);
+    height: 250px;
+    width: 100%;
+  }
+  .offers {
+    height: 145em;
+  }
+  .offers__text h2 {
+    font-size: 2.5rem;
+  }
+  .offers__text p {
+    padding: 1.6em;
+    font-size: 1.4rem;
+  }
+  .offers__offer-box {
+    width: 230px;
+    height: 350px;
+    margin: 1.5em 1em;
+    padding-top: 2em;
+    border-radius: 8px;
+  }
+  .offers__offer-box h3 {
+    font-size: 3rem;
+  }
+  .offers__offer-box p {
+    font-size: 3rem;
+    padding: 0.4em;
+  }
+  .offers__offer-box ul {
+    padding: 0 2em;
+    line-height: 1.9em;
+    font-size: 1.2rem;
+  }
+  .offers__offer-box img {
+    position: relative;
+    top: 0.2em;
+    right: 0.5em;
+  }
+  .offers__btn {
+    margin-top: 1.5em;
+    width: 7em;
+    height: 2em;
+    font-size: 1.5rem;
+  }
+  .offers__fullTxt-btn {
+    margin-top: 1.5em;
+    width: 230px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .offers .arrow {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    height: 30em;
+  }
+  .footer__section-title {
+    margin-top: 1.5em;
+  }
+  .footer__section-links {
+    font-size: 1.1rem;
+  }
+  .footer__box {
+    width: 9em;
+    padding: 3em 0.5em 0.9em;
+    line-height: 2.5em;
+  }
+  .footer__box-title {
+    font-size: 1.3rem;
+  }
+  .footer h2 {
+    font-size: 2.5rem;
+  }
+  .footer__logo {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__bottom-text {
+    margin-top: 1.2em;
+    font-size: 1rem;
+  }
+  .contact {
+    padding: 6em 2em;
+  }
+  .contact__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 2em;
+    height: 70em;
+    width: 100%;
+  }
+  .contact__data {
+    line-height: 3em;
+    padding-bottom: 2em;
+  }
+  .contact__data h3 {
+    font-size: 1.7rem;
+  }
+  .contact__data p {
+    padding-bottom: 0.6em;
+    font-size: 1.2rem;
+  }
+  .contact__data ul {
+    font-size: 0.9rem;
+  }
+  .contact #map {
+    height: 36em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .nav-mobile {
+    position: fixed;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav__section {
+    width: 100%;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav h1 {
+    font-size: 4rem;
+  }
+  .nav__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .hamburger {
+    display: block;
+    top: 5em;
+  }
+  .hamburger-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+  }
+  .hamburger-box--active {
+    border: 1px solid black;
+  }
+  .hamburger-logo {
+    height: 35px;
+    width: 35px;
+  }
+  .hero__img {
+    background-image: url(../img/jungle-small.jpg);
+    height: 400px;
+  }
+  .hero__title {
+    line-height: 1.3em;
+    width: 100%;
+    top: 50%;
+    font-size: 3rem;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .hero__title span {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  .aboutUs__box {
+    padding-bottom: 5em;
+  }
+  .aboutUs__title {
+    padding: 1.6em;
+    font-size: 4rem;
+  }
+  .aboutUs__box-text {
+    font-size: 2rem;
+    width: 400px;
+    line-height: 2em;
+  }
+  .aboutUs__box-text h3 {
+    padding-bottom: 1em;
+    font-size: 2.2rem;
+  }
+  .aboutUs__box-img {
+    margin: 0 2em 2em;
+    background-image: url(../img/waters-small.jpg);
+    width: 400px;
+    height: 300px;
+  }
+  .adventure__title {
+    font-size: 3.5rem;
+    padding: 0.8em 1.2em;
+  }
+  .adventure__img {
+    background-image: url(../img/girl-small.jpg);
+    height: 300px;
+    width: 100%;
+  }
+  .offers {
+    height: 110em;
+  }
+  .offers__text h2 {
+    font-size: 4rem;
+  }
+  .offers__text p {
+    padding: 1.6em;
+    font-size: 2.2rem;
+  }
+  .offers__offer-box {
+    width: 230px;
+    height: 350px;
+    margin: 1.5em 1em;
+    padding-top: 2em;
+    border-radius: 8px;
+  }
+  .offers__offer-box h3 {
+    font-size: 3rem;
+  }
+  .offers__offer-box p {
+    font-size: 3rem;
+    padding: 0.4em;
+  }
+  .offers__offer-box ul {
+    padding: 0 2em;
+    line-height: 1.9em;
+    font-size: 1.2rem;
+  }
+  .offers__offer-box img {
+    position: relative;
+    top: 0.2em;
+    right: 0.5em;
+  }
+  .offers__btn {
+    margin-top: 1.5em;
+    width: 7em;
+    height: 2em;
+    font-size: 1.5rem;
+  }
+  .offers__fullTxt-btn {
+    margin-top: 1.5em;
+    width: 230px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .offers .arrow {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    height: 30em;
+  }
+  .footer__section-title {
+    padding-top: 2.5em;
+  }
+  .footer__section-links {
+    font-size: 1.4rem;
+  }
+  .footer__box {
+    width: 120px;
+    padding: 3em 0.9em 0.9em;
+    line-height: 2.5em;
+  }
+  .footer__box-title {
+    font-size: 1.6rem;
+  }
+  .footer h2 {
+    font-size: 3.1rem;
+  }
+  .footer__logo {
+    width: 3.1em;
+    height: 3.1em;
+  }
+  .footer__bottom-text {
+    margin-top: 1.2em;
+    font-size: 1.3rem;
+  }
+  .contact__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 3em;
+    height: 70em;
+  }
+  .contact__data {
+    line-height: 3em;
+    padding-bottom: 2em;
+  }
+  .contact__data h3 {
+    font-size: 2.3rem;
+  }
+  .contact__data p {
+    padding-bottom: 0.6em;
+    font-size: 1.5rem;
+  }
+  .contact__data ul {
+    font-size: 1.2rem;
+  }
+  .contact #map {
+    height: 36em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  html {
+    scroll-padding-top: 9em;
+  }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 9em;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav__link {
+    font-size: 1.8rem;
+    width: 5em;
+  }
+  .nav h1 {
+    font-size: 3.8rem;
+  }
+  .nav__logo {
+    width: 30px;
+    height: 30px;
+  }
+  .hero__img {
+    background-image: url(../img/jungle-big.jpg);
+    height: 40em;
+  }
+  .hero__title {
+    margin-right: -5em;
+    left: 50%;
+    top: 50%;
+    font-size: 3rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .hero__title span {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+  .aboutUs__box {
+    padding-bottom: 5em;
+  }
+  .aboutUs__title {
+    padding: 1.1em;
+    font-size: 4rem;
+  }
+  .aboutUs__box-text {
+    font-size: 1.5rem;
+    width: 550px;
+    line-height: 2em;
+  }
+  .aboutUs__box-text h3 {
+    padding-bottom: 1em;
+    font-size: 2.2rem;
+  }
+  .aboutUs__box-img {
+    margin: 0 8em 8em;
+    background-image: url(../img/waters-big.jpg);
+    width: 550px;
+    height: 350px;
+  }
+  .adventure__title {
+    font-size: 3.5rem;
+    padding: 0.8em 1.2em;
+  }
+  .adventure__img {
+    background-image: url(../img/girl-big.jpg);
+    height: 300px;
+    width: 100%;
+  }
+  .offers {
+    height: 110em;
+  }
+  .offers__text h2 {
+    font-size: 4rem;
+  }
+  .offers__text p {
+    padding: 1em;
+    font-size: 2.2rem;
+  }
+  .offers__offer-box {
+    width: 230px;
+    height: 350px;
+    margin: 2.5em 2em;
+    padding-top: 3em;
+    border-radius: 8px;
+  }
+  .offers__offer-box h3 {
+    font-size: 3rem;
+  }
+  .offers__offer-box p {
+    font-size: 3rem;
+    padding: 0.4em;
+  }
+  .offers__offer-box ul {
+    padding: 0 2em;
+    line-height: 1.9em;
+    font-size: 1.2rem;
+  }
+  .offers__offer-box img {
+    position: relative;
+    top: 0.2em;
+    right: 0.5em;
+  }
+  .offers__btn {
+    margin-top: 1.5em;
+    width: 7em;
+    height: 2em;
+    font-size: 1.5rem;
+  }
+  .offers__fullTxt-btn {
+    margin-top: 1.5em;
+    width: 230px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .offers .arrow {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    height: 30em;
+  }
+  .footer__section-title {
+    padding-top: 2.5em;
+  }
+  .footer__section-links {
+    font-size: 1.4rem;
+  }
+  .footer__box {
+    width: 150px;
+    padding: 3em 0.9em 0.9em;
+    line-height: 2.5em;
+  }
+  .footer__box-title {
+    font-size: 1.8rem;
+  }
+  .footer h2 {
+    font-size: 3.8rem;
+  }
+  .footer__logo {
+    width: 33px;
+    height: 33px;
+  }
+  .footer__bottom-text {
+    margin-top: 1.2em;
+    font-size: 1.3rem;
+  }
+  .contact__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 5em;
+    height: 70em;
+  }
+  .contact__data {
+    line-height: 3em;
+    padding-bottom: 2em;
+  }
+  .contact__data h3 {
+    font-size: 3rem;
+  }
+  .contact__data p {
+    padding-bottom: 0.6em;
+    font-size: 1.7rem;
+  }
+  .contact__data ul {
+    font-size: 1.4rem;
+  }
+  .contact #map {
+    height: 36em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 11em;
+  }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 11em;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav h1 {
+    font-size: 4.5rem;
+  }
+  .nav__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .hero__img {
+    background-image: url(../img/jungle-big.jpg);
+    height: 500px;
+  }
+  .hero__title {
+    left: 50%;
+    top: 50%;
+    font-size: 4.3rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .hero__title span {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+  .aboutUs__box {
+    padding-bottom: 3em;
+  }
+  .aboutUs__title {
+    padding: 1.6em;
+    font-size: 4.5rem;
+  }
+  .aboutUs__box-text {
+    font-size: 2rem;
+    width: 700px;
+    line-height: 2em;
+    padding-left: 1em;
+  }
+  .aboutUs__box-text h3 {
+    padding-bottom: 1em;
+    font-size: 3rem;
+  }
+  .aboutUs__box-img {
+    margin: 0 8em 8em;
+    background-image: url(../img/waters-big.jpg);
+    width: 600px;
+    height: 400px;
+  }
+  .adventure__title {
+    font-size: 5.2rem;
+    padding: 0.8em 4.2em;
+  }
+  .adventure__img {
+    background-image: url(../img/girl-big.jpg);
+    height: 400px;
+    width: 100%;
+  }
+  .offers {
+    height: 130em;
+  }
+  .offers__text h2 {
+    font-size: 4.5rem;
+  }
+  .offers__text p {
+    padding: 1.6em;
+    font-size: 2.4rem;
+  }
+  .offers__offer-box {
+    width: 330px;
+    height: 450px;
+    margin: 2.5em 2em;
+    padding-top: 3em;
+    border-radius: 8px;
+  }
+  .offers__offer-box h3 {
+    font-size: 4rem;
+  }
+  .offers__offer-box p {
+    font-size: 5rem;
+    padding: 0.4em;
+  }
+  .offers__offer-box ul {
+    padding: 0 2em;
+    line-height: 1.9em;
+    font-size: 1.8rem;
+  }
+  .offers__offer-box img {
+    position: relative;
+    top: 0.2em;
+    right: 0.5em;
+  }
+  .offers__btn {
+    margin-top: 1.5em;
+    width: 10em;
+    height: 2em;
+    font-size: 2rem;
+  }
+  .offers__fullTxt-btn {
+    margin-top: 1.5em;
+    width: 300px;
+    height: 50px;
+    font-size: 2rem;
+  }
+  .offers .arrow {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    height: 40em;
+  }
+  .footer__section-links {
+    font-size: 1.8rem;
+  }
+  .footer__box {
+    padding: 3em;
+    line-height: 2em;
+  }
+  .footer__box-title {
+    font-size: 2.5rem;
+  }
+  .footer h2 {
+    font-size: 5rem;
+  }
+  .footer__logo {
+    width: 8em;
+    height: 8em;
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+            filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+  }
+  .footer__bottom-text {
+    margin-top: 2em;
+    font-size: 1.3rem;
+  }
+  .contact__box {
+    padding: 5em;
+    height: 60em;
+  }
+  .contact__data {
+    line-height: 3em;
+    padding-left: 5em;
+  }
+  .contact__data h3 {
+    font-size: 3.5rem;
+  }
+  .contact__data p {
+    padding-bottom: 0.6em;
+    font-size: 1.9rem;
+  }
+  .contact__data ul {
+    font-size: 1.6rem;
+  }
+  .contact #map {
+    height: 50em;
+    width: 70em;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

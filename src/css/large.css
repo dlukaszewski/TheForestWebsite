@@ -1,0 +1,176 @@
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 11em;
+  }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 11em;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav h1 {
+    font-size: 4.5rem;
+  }
+  .nav__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .hero__img {
+    background-image: url(../img/jungle-big.jpg);
+    height: 500px;
+  }
+  .hero__title {
+    left: 50%;
+    top: 50%;
+    font-size: 4.3rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .hero__title span {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+  .aboutUs__box {
+    padding-bottom: 3em;
+  }
+  .aboutUs__title {
+    padding: 1.6em;
+    font-size: 4.5rem;
+  }
+  .aboutUs__box-text {
+    font-size: 2rem;
+    width: 700px;
+    line-height: 2em;
+    padding-left: 1em;
+  }
+  .aboutUs__box-text h3 {
+    padding-bottom: 1em;
+    font-size: 3rem;
+  }
+  .aboutUs__box-img {
+    margin: 0 8em 8em;
+    background-image: url(../img/waters-big.jpg);
+    width: 600px;
+    height: 400px;
+  }
+  .adventure__title {
+    font-size: 5.2rem;
+    padding: 0.8em 4.2em;
+  }
+  .adventure__img {
+    background-image: url(../img/girl-big.jpg);
+    height: 400px;
+    width: 100%;
+  }
+  .offers {
+    height: 130em;
+  }
+  .offers__text h2 {
+    font-size: 4.5rem;
+  }
+  .offers__text p {
+    padding: 1.6em;
+    font-size: 2.4rem;
+  }
+  .offers__offer-box {
+    width: 330px;
+    height: 450px;
+    margin: 2.5em 2em;
+    padding-top: 3em;
+    border-radius: 8px;
+  }
+  .offers__offer-box h3 {
+    font-size: 4rem;
+  }
+  .offers__offer-box p {
+    font-size: 5rem;
+    padding: 0.4em;
+  }
+  .offers__offer-box ul {
+    padding: 0 2em;
+    line-height: 1.9em;
+    font-size: 1.8rem;
+  }
+  .offers__offer-box img {
+    position: relative;
+    top: 0.2em;
+    right: 0.5em;
+  }
+  .offers__btn {
+    margin-top: 1.5em;
+    width: 10em;
+    height: 2em;
+    font-size: 2rem;
+  }
+  .offers__fullTxt-btn {
+    margin-top: 1.5em;
+    width: 300px;
+    height: 50px;
+    font-size: 2rem;
+  }
+  .offers .arrow {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    height: 40em;
+  }
+  .footer__section-links {
+    font-size: 1.8rem;
+  }
+  .footer__box {
+    padding: 3em;
+    line-height: 2em;
+  }
+  .footer__box-title {
+    font-size: 2.5rem;
+  }
+  .footer h2 {
+    font-size: 5rem;
+  }
+  .footer__logo {
+    width: 8em;
+    height: 8em;
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+            filter: opacity(0.5) drop-shadow(0 0 0 #414141) saturate(100%);
+  }
+  .footer__bottom-text {
+    margin-top: 2em;
+    font-size: 1.3rem;
+  }
+  .contact__box {
+    padding: 5em;
+    height: 60em;
+  }
+  .contact__data {
+    line-height: 3em;
+    padding-left: 5em;
+  }
+  .contact__data h3 {
+    font-size: 3.5rem;
+  }
+  .contact__data p {
+    padding-bottom: 0.6em;
+    font-size: 1.9rem;
+  }
+  .contact__data ul {
+    font-size: 1.6rem;
+  }
+  .contact #map {
+    height: 50em;
+    width: 70em;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+/*# sourceMappingURL=large.css.map */

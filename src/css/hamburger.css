@@ -1,0 +1,23 @@
+.hamburger {
+  position: fixed;
+  padding: 1em;
+  cursor: pointer;
+  font: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+.hamburger-box {
+  display: block;
+  position: relative;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.hamburger-logo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=hamburger.css.map */

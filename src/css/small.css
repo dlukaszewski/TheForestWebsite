@@ -1,0 +1,205 @@
+@media (min-width: 577px) and (max-width: 768px) {
+  .nav-mobile {
+    position: fixed;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav__section {
+    width: 100%;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav h1 {
+    font-size: 4rem;
+  }
+  .nav__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .hamburger {
+    display: block;
+    top: 5em;
+  }
+  .hamburger-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+  }
+  .hamburger-box--active {
+    border: 1px solid black;
+  }
+  .hamburger-logo {
+    height: 35px;
+    width: 35px;
+  }
+  .hero__img {
+    background-image: url(../img/jungle-small.jpg);
+    height: 400px;
+  }
+  .hero__title {
+    line-height: 1.3em;
+    width: 100%;
+    top: 50%;
+    font-size: 3rem;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .hero__title span {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  .aboutUs__box {
+    padding-bottom: 5em;
+  }
+  .aboutUs__title {
+    padding: 1.6em;
+    font-size: 4rem;
+  }
+  .aboutUs__box-text {
+    font-size: 2rem;
+    width: 400px;
+    line-height: 2em;
+  }
+  .aboutUs__box-text h3 {
+    padding-bottom: 1em;
+    font-size: 2.2rem;
+  }
+  .aboutUs__box-img {
+    margin: 0 2em 2em;
+    background-image: url(../img/waters-small.jpg);
+    width: 400px;
+    height: 300px;
+  }
+  .adventure__title {
+    font-size: 3.5rem;
+    padding: 0.8em 1.2em;
+  }
+  .adventure__img {
+    background-image: url(../img/girl-small.jpg);
+    height: 300px;
+    width: 100%;
+  }
+  .offers {
+    height: 110em;
+  }
+  .offers__text h2 {
+    font-size: 4rem;
+  }
+  .offers__text p {
+    padding: 1.6em;
+    font-size: 2.2rem;
+  }
+  .offers__offer-box {
+    width: 230px;
+    height: 350px;
+    margin: 1.5em 1em;
+    padding-top: 2em;
+    border-radius: 8px;
+  }
+  .offers__offer-box h3 {
+    font-size: 3rem;
+  }
+  .offers__offer-box p {
+    font-size: 3rem;
+    padding: 0.4em;
+  }
+  .offers__offer-box ul {
+    padding: 0 2em;
+    line-height: 1.9em;
+    font-size: 1.2rem;
+  }
+  .offers__offer-box img {
+    position: relative;
+    top: 0.2em;
+    right: 0.5em;
+  }
+  .offers__btn {
+    margin-top: 1.5em;
+    width: 7em;
+    height: 2em;
+    font-size: 1.5rem;
+  }
+  .offers__fullTxt-btn {
+    margin-top: 1.5em;
+    width: 230px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .offers .arrow {
+    width: 1em;
+    height: 1em;
+  }
+  .footer {
+    height: 30em;
+  }
+  .footer__section-title {
+    padding-top: 2.5em;
+  }
+  .footer__section-links {
+    font-size: 1.4rem;
+  }
+  .footer__box {
+    width: 120px;
+    padding: 3em 0.9em 0.9em;
+    line-height: 2.5em;
+  }
+  .footer__box-title {
+    font-size: 1.6rem;
+  }
+  .footer h2 {
+    font-size: 3.1rem;
+  }
+  .footer__logo {
+    width: 3.1em;
+    height: 3.1em;
+  }
+  .footer__bottom-text {
+    margin-top: 1.2em;
+    font-size: 1.3rem;
+  }
+  .contact__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 3em;
+    height: 70em;
+  }
+  .contact__data {
+    line-height: 3em;
+    padding-bottom: 2em;
+  }
+  .contact__data h3 {
+    font-size: 2.3rem;
+  }
+  .contact__data p {
+    padding-bottom: 0.6em;
+    font-size: 1.5rem;
+  }
+  .contact__data ul {
+    font-size: 1.2rem;
+  }
+  .contact #map {
+    height: 36em;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=small.css.map */
