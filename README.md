@@ -1,2 +1,2 @@
 # TheForestWebsite
-More advanced website. Part of learning process
+More advanced website using Gulp. Part of learning process
