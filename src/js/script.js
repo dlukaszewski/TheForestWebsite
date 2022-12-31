@@ -71,24 +71,7 @@ const initMap = () => {
 		map: map,
 	});
 };
-// const handleScroll = () => {
-// 	const currentSection = window.scrollY;
 
-// 	allWhiteSections.forEach(section => {
-// 		if (
-// 			section.classList.contains("white-section") &&
-// 			section.offsetTop <= currentSection + 30
-// 		) {
-// 			hamburgerLogo.setAttribute("src", "dist/img/tree_nature_icon.png");
-// 			hamburgerBox.style.border = "1px solid black";
-// 		} else {
-// 			// turnWhiteLogo();
-// 			hamburgerLogo.setAttribute("src", "dist/img/tree_nature_icon_white.png");
-// 			hamburgerBox.style.border = "1px solid #fff";
-// 		}
-// 	});
-// };
-// handleScroll();
 window.initMap = initMap;
 hamburgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleScroll);
